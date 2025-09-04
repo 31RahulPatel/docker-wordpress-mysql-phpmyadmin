@@ -2,11 +2,13 @@
 
 A complete Docker Compose configuration for running WordPress with MySQL database and phpMyAdmin interface.
 
+Read util end for Cleanup proocess. Once the Project is done make sure you stop the running containers and Delete the Containers and Images as well.
+
 ## 🚀 Quick Start
 
 ```bash
 # Clone and start
-git clone <your-repo-url>
+git clone https://github.com/31RahulPatel/docker-wordpress-mysql-phpmyadmin.git
 cd wordpress
 docker compose up -d
 
@@ -17,9 +19,9 @@ docker compose up -d
 
 ## 📋 Prerequisites
 
+For Windows :
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed
-- 4GB+ RAM available
-- 10GB+ free disk space
+
 
 ## 🔧 Services
 
@@ -32,7 +34,7 @@ docker compose up -d
 ## 🔑 Default Credentials
 
 **MySQL:**
-- Root Password: `RootPass123!`
+- Root Password: `password`
 - Database: `wordpress`
 - User: `wordpress`
 - Password: `wordpress`
@@ -102,7 +104,7 @@ docker compose logs wordpress
 docker compose logs db
 ```
 
-## 🔧 Customization
+## 🔧 Customization (Extras):
 
 ### Change Ports
 Edit `docker-compose.yaml`:
